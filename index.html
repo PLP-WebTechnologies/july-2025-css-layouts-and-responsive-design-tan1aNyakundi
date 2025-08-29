@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Layout — Flexbox & Grid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">MySite</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Fast, simple layout</h1>
+      <p>Example showing Flexbox (header/footer) and Grid (features).</p>
+      <a class="btn" href="#features">See features</a>
+    </section>
+
+    <section id="features" class="features">
+   
+      <article class="card">
+        <h3>Invoices</h3>
+        <p>Auto-generate simple invoices in one click.</p>
+      </article>
+      <article class="card">
+        <h3>Inventory</h3>
+        <p>Track stock with quick updates.</p>
+      </article>
+      <article class="card">
+        <h3>Marketing</h3>
+        <p>Schedule social posts and emails easily.</p>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Message
+          <textarea name="msg" placeholder="Short message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> MySite — Built with Flexbox & Grid</p>
+  </footer>
+</body>
+</html>
